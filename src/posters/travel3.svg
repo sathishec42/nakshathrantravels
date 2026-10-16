@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="640" height="360" viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Travel Poster 3">
+  <defs>
+    <linearGradient id="g3" x1="0" x2="1">
+      <stop offset="0%" stop-color="#f6d365" />
+      <stop offset="100%" stop-color="#fda085" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#g3)" rx="12" />
+  <text x="32" y="72" font-family="Verdana" font-size="36" fill="#6b3f00" font-weight="700">Discover Hidden Gems</text>
+  <text x="32" y="120" font-family="Verdana" font-size="20" fill="#6b3f00">Tailored trips across India with comfortable pickups</text>
+</svg>

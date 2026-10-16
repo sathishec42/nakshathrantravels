@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="640" height="360" viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Travel Poster 2">
+  <defs>
+    <linearGradient id="g2" x1="0" x2="1">
+      <stop offset="0%" stop-color="#ff9a9e" />
+      <stop offset="100%" stop-color="#fecfef" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#g2)" rx="12" />
+  <text x="32" y="72" font-family="Georgia" font-size="36" fill="#4b224b" font-weight="700">Road Trips Made Easy</text>
+  <text x="32" y="120" font-family="Georgia" font-size="20" fill="#4b224b">Comfortable vehicles • Trusted drivers • Affordable tariffs</text>
+  <rect x="480" y="40" width="120" height="120" rx="12" fill="#fff" opacity="0.12" />
+</svg>

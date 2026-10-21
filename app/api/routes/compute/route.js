@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { calculateFare } from '@/lib/pricing';
+import { calculateFare } from '../../../../lib/pricing';
 
 export async function POST(request) {
   try {

@@ -1,11 +1,42 @@
-import { AppBar, Box, Button, Card, CardContent, CardMedia, Chip, Container, Divider, Drawer, Grid, IconButton, List, ListItemButton, ListItemText, MenuItem, Paper, Stack, TextField, Toolbar, Typography } from '@mui/material';
+'use client';
+
+import {
+  AppBar,
+  Box,
+  Button,
+  Card,
+  CardContent,
+  CardMedia,
+  Chip,
+  Container,
+  Divider,
+  Drawer,
+  Grid,
+  IconButton,
+  List,
+  ListItemButton,
+  ListItemText,
+  MenuItem,
+  Paper,
+  Stack,
+  TextField,
+  Toolbar,
+  Typography,
+} from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import PhoneIcon from '@mui/icons-material/Phone';
 import RouteIcon from '@mui/icons-material/Route';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
-import { navItems, trustHighlights, destinationCards, packageOffers, travelReasons, adminStats } from '../src/data/siteContent';
+import {
+  navItems,
+  trustHighlights,
+  destinationCards,
+  packageOffers,
+  travelReasons,
+  adminStats,
+} from '../src/data/siteContent';
 import { vehicles } from '../src/data/mockData';
 
 export default function Page() {
@@ -39,7 +70,7 @@ export default function Page() {
           </IconButton>
 
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 1.5, flexGrow: 1 }}>
-            <Box sx={{ width: 42, height: 42, borderRadius: '50%', background: 'linear-gradient(135deg, #0b1f3a 0%, #203d74 100%)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontWeight: 800 }}>
+            <Box sx={{ width: 42, height: 42, borderRadius: '50%', background: 'linear-gradient(135deg, #0b1f3a 0%, #203d74 100%)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontWeight: 900 }}>
               N
             </Box>
             <Typography variant="h6" sx={{ fontWeight: 800 }}>
@@ -65,7 +96,7 @@ export default function Page() {
         {drawer}
       </Drawer>
 
-      <Box id="home" sx={{ background: 'linear-gradient(135deg, rgba(11,31,58,0.96), rgba(32,61,116,0.92)), url(https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1600&q=80) center/cover', minHeight: 620, display: 'flex', alignItems: 'center' }}>
+      <Box id="home" sx={{ background: 'linear-gradient(135deg, rgba(11,31,58,0.96), rgba(32,61,116,0.92)), url(https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1600&q=80) center/cover no-repeat', py: { xs: 8, md: 12 } }}>
         <Container maxWidth="lg">
           <Grid container spacing={4} alignItems="center">
             <Grid item xs={12} md={7}>
@@ -317,7 +348,7 @@ export default function Page() {
                 Building dependable travel experiences across South India.
               </Typography>
               <Typography variant="body1" sx={{ lineHeight: 1.8, color: 'rgba(255,255,255,0.82)' }}>
-                We help individuals, families and groups book verified vehicles, plan custom routes and travel with confidence from pickup to drop-off. Our focus is safety, transparency, and service that matches your exact travel needs.
+                We help individuals, families and groups book verified vehicles, plan custom routes and travel with confidence from pickup to drop-off. Our focus is safety, transparency, and seamless journeys across every mile.
               </Typography>
             </Grid>
             <Grid item xs={12} md={6}>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, CssBaseline, AppBar, Toolbar, Typography, Drawer, List, ListItem, ListItemText, Divider, Container, Grid } from '@mui/material';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import TravelPoster from './posters/travel1.svg';
 import TravelPoster2 from './posters/travel2.svg';
 import TravelPoster3 from './posters/travel3.svg';
@@ -84,6 +85,7 @@ export default function App() {
           </Container>
         </Box>
       </Box>
+      <SpeedInsights />
     </ThemeProvider>
   );
 }

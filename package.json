@@ -5,16 +5,67 @@
   "dependencies": {
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
+    "@googlemaps/google-maps-services-js": "^3.4.2",
     "@mui/icons-material": "^5.14.0",
     "@mui/material": "^5.14.0",
+    "@tanstack/react-query": "^5.107.1",
+    "apple-signin-auth": "^2.1.0",
+    "axios": "^1.21.0",
+    "bcryptjs": "^3.0.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "express-rate-limit": "^8.7.3",
+    "firebase": "^13.2.0",
+    "firebase-admin": "^14.5.0",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "lucide-react": "^1.70.0",
+    "mongoose": "^9.12.0",
+    "passport": "^0.7.0",
+    "passport-apple": "^2.0.2",
+    "passport-facebook": "^3.0.0",
+    "passport-github2": "^0.1.12",
+    "passport-google-oauth20": "^2.0.0",
+    "razorpay": "^2.9.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1"
+    "react-router-dom": "^7.18.5",
+    "react-scripts": "5.0.1",
+    "zod": "^4.6.7"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "craco start",
+    "start:web": "craco start",
+    "start:api": "node server/index.js",
+    "dev": "concurrently -k -n api,web \"npm:start:api\" \"npm:start:web\"",
+    "seed:superadmin": "node server/scripts/seedSuperAdmin.js",
+    "db:indexes": "node server/scripts/createIndexes.js",
+    "build": "craco build",
+    "test": "craco test",
+    "test:server": "node --test server/app.test.js server/services/*.test.js server/middleware/*.test.js server/validation/*.test.js",
+    "eject": "craco eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "http://localhost:4000",
+  "devDependencies": {
+    "@craco/craco": "^7.1.0",
+    "autoprefixer": "^10.6.2",
+    "concurrently": "^10.0.7",
+    "postcss": "^8.5.32",
+    "supertest": "^7.3.2",
+    "tailwindcss": "^3.4.19"
   }
 }
